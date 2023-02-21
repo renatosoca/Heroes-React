@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Navigate, Outlet } from 'react-router-dom';
+import { Navigate, Outlet, useLocation } from 'react-router-dom';
 
 import  NavBar  from '../components/ui/NavBar';
 import { AuthContext } from '../context/AuthContext';
@@ -7,11 +7,16 @@ import { AuthContext } from '../context/AuthContext';
 const IndexLayout = () => {
 
   const { user } = useContext( AuthContext );
+
+  const { pathname, search } = useLocation();
+  
+  const lastUrl = pathname + search;
+  localStorage.setItem( 'lastUrl', lastUrl );
   
   return (
     <>
     {
-      (user?.logged ) 
+      (user?.id ) 
       ? (
           <> 
           <NavBar />

@@ -6,10 +6,12 @@ const LoginPage = () => {
   const { login } = useContext( AuthContext );
   const navigate = useNavigate();
 
+  const lastUrl = localStorage.getItem( 'lastUrl' ) || '/';
+
   const handleLogin = () => {
     login( 'Renato Soca' );
     
-    navigate( '/dc', { replace: true } );
+    navigate( lastUrl , { replace: true } );
   }
 
   return (
