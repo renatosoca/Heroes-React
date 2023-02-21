@@ -1,10 +1,15 @@
+import { BrowserRouter } from 'react-router-dom'
+
+import HeroesRoutes from './router/heroes/HeroesRoutes';
 
 function App() {
 
   return (
-    <div className="App">
-      <h1>Heroes</h1>
-    </div>
+    <>
+      <BrowserRouter>
+        <HeroesRoutes />
+      </BrowserRouter>
+    </>
   )
 }
 
