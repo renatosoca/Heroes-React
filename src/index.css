@@ -174,3 +174,48 @@ img {
   font-size: 1.3rem;
   font-weight: bold;
 }
+
+.search {
+  max-width: 90rem;
+  width: 95%;
+  margin: 0 auto;
+}
+.search__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 3rem;
+}
+.search__form {
+  display: block;
+  width: 100%;
+}
+.search__form-content {
+  display: flex;
+  flex-direction: column;
+}
+.search__input {
+  flex: 1;
+  padding: .7rem 1rem;
+  border: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: .5rem;
+}
+.search__button {
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.result__hero {
+  background-color: blue;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.result__notfound {
+  background-color: red;
+  padding: 1rem;
+}

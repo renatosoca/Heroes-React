@@ -4,7 +4,7 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    navigate( '/home', { replace: true } );
+    navigate( '/dc', { replace: true } );
   }
 
   return (
