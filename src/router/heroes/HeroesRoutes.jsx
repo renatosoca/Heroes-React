@@ -12,13 +12,14 @@ const HeroesRoutes = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<IndexLayout />} >
+        <Route path="login" element={<LoginPage />} />
+
+        <Route path="/*" element={<IndexLayout />} >
           <Route index element={<IndexPage /> } />
           <Route path="dc" element={<DcComics /> } />
           <Route path="marvel" element={<MarvelComics /> } />
           <Route path="hero/:heroId" element={<HeroPage /> } />
           <Route path="search" element={<SearchPage /> } />
-          <Route path="login" element={<LoginPage />} />
         </Route>
       </Routes>
     </>
