@@ -18,7 +18,7 @@ const HeroPage = () => {
     <>
       <div className="heroe">
         <div className="heroe__container">
-          <div className="heroe__img">
+          <div className="heroe__img animate__animated animate__zoomIn">
             <img src={`/assets/img/${ heroId }.jpg`} alt="" />
           </div>
 

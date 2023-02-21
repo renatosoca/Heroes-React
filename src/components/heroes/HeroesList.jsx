@@ -1,5 +1,4 @@
 import React, { useMemo } from 'react'
-import 'animate.css';
 
 import { GetHeroesByPublisher } from '../../helpers/heroes/GetHeroesByPublisher'
 import HeroCard from './HeroCard';
@@ -9,7 +8,7 @@ const HeroesList = ( {publisher} ) => {
 
   return (
     <>
-      <div className='heroes animate__fadeInDownBig'>
+      <div className='heroes animate__animated animate__fadeIn'>
         { heroes.map( hero => <HeroCard key={hero.id} heroe={hero} />) }
       </div>
     </>

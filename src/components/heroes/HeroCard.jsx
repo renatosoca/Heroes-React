@@ -5,10 +5,10 @@ const HeroCard = ( { heroe } ) => {
   
   return (
     <>
-      <div className="heroes__container">
+      <div className="heroes__container ">
         <img src={ imageurl } alt="" />
         
-        <div className="heroes__content">
+        <div className="heroes__content ">
           <h3>{ heroe.superhero }</h3>
           <p>{ heroe.alter_ego }</p>
 
