@@ -90,7 +90,7 @@ img {
   right: 0;
   left: 0;
   bottom: 0;
-  background-image: url(../src/assets/img/bg-home.jpg);
+  background-image: url(../assets/img/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -126,7 +126,7 @@ img {
 
 .heroes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -142,5 +142,35 @@ img {
 }
 .heroes__link {
   color: rgb(28, 102, 222);
+  font-weight: bold;
+}
+
+.heroe {
+  max-width: 90rem;
+  width: 95%;
+  margin: 0 auto;
+}
+.heroe__container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+.heroe__img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.heroe__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.heroe__button {
+  border: none;
+  padding: .5rem 1.5rem;
+  background-color: rgb(23, 176, 169);
+  font-size: 1.3rem;
   font-weight: bold;
 }
