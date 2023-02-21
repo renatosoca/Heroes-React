@@ -1,13 +1,13 @@
 import { BrowserRouter } from 'react-router-dom'
 
-import HeroesRoutes from './router/heroes/HeroesRoutes';
+import HeroesApp from './router/HeroesApp';
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
-        <HeroesRoutes />
+        <HeroesApp />
       </BrowserRouter>
     </>
   )
