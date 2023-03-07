@@ -1,7 +1,8 @@
-import { useReducer } from "react"
+import { useReducer, createContext } from "react"
 import { types } from "../types/types";
-import { AuthContext } from "./AuthContext"
 import { authReducer } from "./authReducer";
+
+export const AuthContext = createContext();
 
 const initialState = {
   logged: false,
@@ -31,6 +32,7 @@ export const AuthProvider = ({ children }) => {
 
     dispatch( action );
   }
+  console.log(authState)
 
   const logout = () => {
     const action = {
