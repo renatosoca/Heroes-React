@@ -1,16 +1,13 @@
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from "react-router-dom";
 
-import HeroesApp from './router/HeroesApp';
+import HeroesApp from "./router/HeroesApp";
 
 function App() {
-
   return (
-    <>
-      <BrowserRouter>
-        <HeroesApp />
-      </BrowserRouter>
-    </>
-  )
+    <BrowserRouter>
+      <HeroesApp />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
